@@ -82,7 +82,7 @@ function getRadius(magnitude) {
 d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(function(data) {
   console.log(data);
 // Creating a GeoJSON layer with the retrieved data.
-  L.geoJSON(data, {
+L.geoJSON(data, {
 
   // We turn each feature into a circleMarker on the map.
       pointToLayer: function(feature, latlng) {
